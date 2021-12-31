@@ -40,3 +40,7 @@ Display modes include inline blocks which avoid the automatic fit to content of 
 
 #### CSS - Height 100%
 By default height is set to fit the content. When using height: 100%, it takes their parent height which is usually just enough to fit the content and appears as if nothing changed.  
+
+#### CSS - Media Query Limits
+* Mobile - (max-width: 480px)
+* Tablets - (max-width: 1024px)
