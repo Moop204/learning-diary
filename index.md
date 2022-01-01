@@ -2,6 +2,23 @@
 
 To keep track of what I'm learning on my own (and make sure I'm not slacking off) I will log the things I learn for each day of January 2022. This includes new knowledge, revision of old concepts and niche tidbits.
 
+### 1/1/22 - New Year
+I guess this is my new years resolution now.
+
+#### JS - String to Array
+Useful for accessing array features like map and reduce.
+
+ ```
+ Array.from(str);
+ ```
+
+#### Leetcode - [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+_Task_: Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+_Identification of Requirements_: One invariant is that anagrams are grouped together. Properties of an anagram include equal lengths and an equivalent frequency table. 
+
+_Implementation_: Using hashmaps to place strings into heaps to group them and build the frequency table. However the frequency table had to be sorted in order to ensure that strings with matching anagrams are mapped consistently as the mapping is dependant on the order at which characters are first encountered. An improvement to speed was achieved by replacing this method with the sorting of strings before mapping. This would sort a simpler data structure. 
+
 ### 31/12/21 - NYE Practice
 Starting a day early to test the format and see what would need to be changed in further blogs. 
 
