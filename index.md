@@ -7,8 +7,21 @@ The Australian NBN project has long been felt as a failure. However I have notic
 
 #### Leetcode - [Pair of Songs with Duration Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)
 _Task_: Return the number of pairs of songs for which their total duration in seconds is divisible by 60.
+
 _Identification of Requirements_: Count number of pairs where sum is divisible by 60. 
+
 _Implementation_: Going for the brute force approach would have us iterate through in two loops comparing each pair of elements. This would net an O(n^2) algorithm. However using the limit of 60 seconds we can improve this approach by grouping times based on their remainder after dividing by 60. After this grouping you can determine which pairs are valid based on their complement. This is faster as the grouping requires one pass (O(n)) to figure out how much each time remains and then iterating through the hashmap or array of 60 would take at most half of n (O(n)) as we can ignore checking half the range as they are the complement of the other half. One notable edge cases exists where the complement is equivalent to the original key. Instead of multiplying the number of elements available, you must instead calculate nC2 where n is the number of elements with the self-referencing complement. 
+
+#### CSS - Absolute
+Absolute positioning should be treated as where a normal flow would be but that other elements do not recognise. 
+```
+ position: absolute;
+```
+Absolute positioning acts on the closest parent with a position mode set. Otherwise it goes back all the way to the viewport. 
+
+Padding is ignored with absolute positions. Margins are still considered.
+
+#### CSS - 
 
 ### 1/1/22 - New Year
 I guess this is my new years resolution now.
