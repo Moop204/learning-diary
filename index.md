@@ -2,8 +2,17 @@
 
 To keep track of what I'm learning on my own (and make sure I'm not slacking off) I will log the things I learn for each day of January 2022. This includes new knowledge, revision of old concepts and niche tidbits.
 
-### 2/1/22 - Beginning of NBN Monitoring Project
-The Australian NBN project has long been felt as a failure. However I have noticed a lack of a comprehensive timeline of the project.  
+### 3/1/22 - CSS Shapes
+Getting familiar with some simple shapes you can make in CSS helps add some more interesting simple looks. [CSS Tricks](https://css-tricks.com/the-shapes-of-css/) [Shark Coder](https://sharkcoder.com/visual/shapes) [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape)
+
+#### CSS - Circles
+Make border-radius property 50% for a round circle. 
+
+#### CSS - Z-Index 
+Z-index is compared for the first stacking context encountered. All children's z-index is drawn relative to their parents' stacking context if there exists otherwise their z-index is compared. 
+
+### 2/1/22 - Returning to Carousel Component
+For a recently dead project I was looking for a carousel component that could 1. present multiple pictures, 2. have fade in edges. This turned out to not exist and so instead I wrote one with my limited CSS knowledge. Now that I know better I am thinking of reviving that component and designing it to be much more reusable.   
 
 #### Leetcode - [Pair of Songs with Duration Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)
 _Task_: Return the number of pairs of songs for which their total duration in seconds is divisible by 60.
