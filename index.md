@@ -2,6 +2,13 @@
 
 To keep track of what I'm learning on my own (and make sure I'm not slacking off) I will log the things I learn for each day of January 2022. This includes new knowledge, revision of old concepts and niche tidbits.
 
+### 4/1/22 - Bits!
+
+#### Leetcode - [Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)
+_Task_: Obtain complement of given int.
+
+_Notes_: It might be obvious to just apply the bitwise not on the provided int. However this fails to consider the two's complement used to sign ints (in C++20 onwards) which will produce a negative number when a bitwise-not is applied to a positive int. To treat the number as its binary representation we build the solution as we divide the provided int by two and check its even-ness. This means the given int is read right-to-left while the solution is generated left-to-right by bit shifting and using OR operations to insert 1s. As a result a reversal of bits is needed. By creating a mask at the opposite left-right positions we can obtain whether or not the values match and if they do a XOR operation is applied with a 1 at the position checked.   
+
 ### 3/1/22 - CSS Shapes
 Getting familiar with some simple shapes you can make in CSS helps add some more interesting simple looks. [CSS Tricks](https://css-tricks.com/the-shapes-of-css/) [Shark Coder](https://sharkcoder.com/visual/shapes) [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape)
 
